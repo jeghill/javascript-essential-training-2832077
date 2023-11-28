@@ -12,9 +12,9 @@ const greenPack = {
   color: "green",
   volume: 8,
   pocketNum: 3,
-  newVolume: function (volume) {
+  newVolume: function (parametervolume) {
     console.log("this.volume in the method:", this.volume);
-    this.volume = volume;
+    this.volume = parametervolume;
     console.log("this.volume after update:", this.volume);
     (function () {
       console.log("this.volume in nested function:", this.volume);
@@ -25,4 +25,4 @@ const greenPack = {
   },
 };
 
-console.log(greenPack.newVolume(5));
+console.log(greenPack.newVolume(3));

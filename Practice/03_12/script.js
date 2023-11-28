@@ -6,3 +6,25 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+class Bin {
+  constructor( //parameters
+    color,
+    volume,
+    sandwichColor,
+    sandwichVolume,
+    handles //properties
+  ) {
+    this.color = color;
+    this.volume = volume;
+    this.rubbishSandwhichBox = {
+      sandwichColor: color,
+      sandwichVolume: volume,
+    };
+    this.handles = handles;
+  }
+}
+
+const blackBin = new Bin("black", 20, "white", 5, true);
+
+console.log("black bin test", blackBin);

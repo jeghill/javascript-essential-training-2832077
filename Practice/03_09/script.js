@@ -23,4 +23,23 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  newVolume: function (water) {
+    this.volume = water;
+  },
+  newColor: function (rainbow) {
+    this.color = rainbow;
+  },
 };
+
+console.log("volume before", backpack.volume);
+
+backpack.newVolume(20);
+
+console.log("volume water", backpack.volume);
+
+/* backpack.color   
+returns grey
+backpack.newColor('red') - very important to add the ' ' 
+returns undefined
+backpack.color 
+returns red - as function has changed */

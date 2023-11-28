@@ -16,10 +16,13 @@ const greenPack = {
     console.log("this.volume in the method:", this.volume);
     this.volume = volume;
     console.log("this.volume after update:", this.volume);
-    // (function () {
-    //   console.log("this.volume in nested function:", this.volume);
-    // })();
+    return this.volume;
   },
+  // return: 7,
 };
 
-console.log(greenPack.newVolume(5));
+//console.log(greenPack.newVolume(5));
+greenPack.newVolume(2);
+
+/*var x = greenPack.newVolume(2);
+console.log(x); */

@@ -19,3 +19,22 @@ const everydayPack = new Backpack(
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
 console.log("Days since aquired:", everydayPack.backpackAge());
+
+const content = `
+    <main>
+      <article>
+        <h1>Everyday Backpack</h1>
+        <ul>
+          <li>Volume:</li>
+          <li>Color:</li>
+          <li>Age:</li>
+          <li>Number of pockets:</li>
+          <li>Left strap length:</li>
+          <li>Right strap length:</li>
+          <li>Lid status:</li>
+        </ul>
+      </article>
+    </main>
+  `;
+
+document.body.innerHTML = content;

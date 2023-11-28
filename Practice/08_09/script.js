@@ -57,3 +57,14 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+const newArticle = () => {
+  let createArticle = document.createElement("article");
+  createArticle.innerHTML = content;
+  return createArticle;
+};
+
+//image
+const helperImage = () => {
+  let newFigure = document.createElement("figure");
+};
